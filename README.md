@@ -1,2 +1,2 @@
 # todo
-# basic app using vueJs 
+ basic app using vueJs 
