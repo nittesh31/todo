@@ -40,3 +40,10 @@ body{
     /*margin:20px;*/
     
 }
+@media (max-width: 1190px){
+  body{
+      width:100% !important;
+      height:100% !important;
+  }
+  
+}
