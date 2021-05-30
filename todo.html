@@ -21,16 +21,22 @@
         </div>
         <form class="req" @submit.prevent="addTodo" >
             <label for="newTodo" class="get">New Task</label><br>
-            <input v-model="newTodo" type="text" name="newTodo" id="newTodo" value=""><br>
-            <button type="submit" class="eq" name="button">Add Task</button>
-            <button @click="allDone" type="button" name="button">All Done</button>
+            <input v-model="newTodo" type="text" name="newTodo" id="newTodo" value="" style="width:80%"><br>
+            <button type="submit" class="eq" name="button" style="margin:15px;">Add Task</button>
+            <button @click="allDone" type="button" name="button" style="margin:15px;">All Done</button>
         </form>
-        <ul class="ul">
+        <ul class="ul" style="font-size: 150%;list-style: none">
             <li v-for="todo in todos" class="col ul">
+               
                 <input type="checkbox" class="checkbox" v-model="todo.done">
                 
                 <span :class="{done:todo.done}">{{todo.title}}</span>
-                <button @click="removeTodo(todo)" type="button" name="button">Remove</button>
+                <span class="rem">
+                    <button @click="removeTodo(todo)" type="button" name="button" style="font-size:13px; padding-bottom: 0.1%;">Remove</button>
+                </span>
+                
+                
+                
             </li>
         </ul>
     </main>

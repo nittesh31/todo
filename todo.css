@@ -23,6 +23,7 @@ body{
 }
 .eq{
     margin-top: 1%;
+    
 }
 .col{
     color:azure;
@@ -30,8 +31,12 @@ body{
 }
 .ul{
     padding-top: 1%;
-    left:41%;
+    left:44%;
 }
 .done{
     text-decoration: line-through;
+}
+.rem{
+    /*margin:20px;*/
+    
 }
